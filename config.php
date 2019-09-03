@@ -1,9 +1,7 @@
-<?php
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json; charset=utf-8");?>{
+{
 	"config": {
 		"preset": "default",
-		"theme": "jsassist",
+		"theme": "rct2",
 		"allowExternalSource": false,
 		"allowEmoticon": true,
 		"ignoreMQEmoticon": true,
@@ -11,7 +9,7 @@ header("Content-Type: application/json; charset=utf-8");?>{
 		"enableTwitchEmoticon": true,
 		"TwitchEmoticonsize": "1.0",
 		"streamer": {
-			"twitch": "(트위치닉네임)",
+			"twitch": "(다형하기)",
 			"kakaopot": "(카카오닉네임)",
 			"youtube": "(유튜브채널명)"
 		},
@@ -31,12 +29,14 @@ header("Content-Type: application/json; charset=utf-8");?>{
 			"chatBackgroundAlpha": 25
 		},
 		"themes": {
-			"jsassist": {
-				"css": [],
-				"js": [],
-				"image": {
-					"streamer": "",
-					"moderator": ""
+			"rct2": {
+    "css": [
+        "https://cdn.rawgit.com/Lastorder-DC/70a199ad49d5bd2e23ec005e56b1cf70/raw/0c7818bd0530b3f1ed172594cfb5c4db98b99bac/rct2.css"
+    ],
+    "js": [],
+    "image": {
+        "streamer": "http://funzinnu.cafe24.com/stream/cdn/b_broadcaster.png",
+        "moderator": ""
 				}
 			}
 		}
@@ -83,7 +83,8 @@ header("Content-Type: application/json; charset=utf-8");?>{
 			"config": {
 				"oauth": "",
 				"do_not_use_tapic": false,
-				"channelname": "lastorder_dc"
+				"do_not_use_jsassist": true,
+				"channelname": "dodahyeong"
 			}
 		},
 		"mixer": {
